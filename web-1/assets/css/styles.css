@@ -10,6 +10,8 @@
   --color-titles: #222222;
   --color-subtitles: #888;
   --color-text: #555;
+
+  --color-scrollbar: #d3d3d4;
 }
 
 /* Estilos generales */
@@ -192,8 +194,8 @@ body {
 }
 
 .content__page {
-  background-color: var(--color-principal);
   min-height: 100%;
+  background-color: var(--color-principal);
   border-radius: 3.2rem;
 
   display: flex;
@@ -270,4 +272,16 @@ body {
 .menu__option:hover .menu__overlay {
   opacity: 1;
   right: 100%;
+}
+
+/* Sobre mi  */
+.content__about {
+  display: block;
+  overflow: auto;
+
+  max-height: 80vh;
+  height: 100%;
+  min-height: 100%;
+  padding-right: 3rem;
+  padding: 6rem;
 }
