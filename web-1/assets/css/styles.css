@@ -278,8 +278,9 @@ body {
   right: 100%;
 }
 
-/* Sobre mi  */
-.content__about {
+/*  estilos generales Sobre mi y otras paginas */
+.content__about,
+.content__resume {
   display: block;
   overflow: auto;
 
@@ -290,17 +291,20 @@ body {
   padding: 6rem;
 }
 
-.about__header {
+.about__header,
+.resume__header {
   display: inline-block;
   margin-bottom: 4.5rem;
 }
 
-.about__title {
+.about__title,
+.resume__title {
   position: relative;
   font-size: 3.2rem;
 }
 
-.about__title::after {
+.about__title::after,
+.resume__title::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -318,7 +322,8 @@ body {
   opacity: 0.5;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
   color: var(--color-secondary);
 }
 
@@ -369,7 +374,8 @@ body {
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header {
+.extra__header,
+.resume__subheader {
   display: inline-block;
   padding-right: 1.2rem;
   margin-bottom: 2.5rem;
@@ -380,7 +386,8 @@ body {
 .reviews__title,
 .clients__title,
 .prices__title,
-.extra__title {
+.extra__title,
+.resume__subtitle {
   font-size: 2.1rem;
 }
 
@@ -388,7 +395,8 @@ body {
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after {
+.extra__title::after,
+.resume__subtitle::after {
   content: "";
   position: absolute;
   top: 15px;
