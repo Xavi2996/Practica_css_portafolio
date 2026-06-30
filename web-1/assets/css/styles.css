@@ -282,7 +282,9 @@ body {
 
 /*  estilos generales Sobre mi y otras paginas */
 .content__about,
-.content__resume {
+.content__resume,
+.content__portfolio,
+.content__blog {
   display: block;
   overflow: auto;
 
@@ -294,19 +296,25 @@ body {
 }
 
 .about__header,
-.resume__header {
+.resume__header,
+.portfolio__header,
+.blog__header {
   display: inline-block;
   margin-bottom: 4.5rem;
 }
 
 .about__title,
-.resume__title {
+.resume__title,
+.portfolio__title,
+.blog__title {
   position: relative;
   font-size: 3.2rem;
 }
 
 .about__title::after,
-.resume__title::after {
+.resume__title::after,
+.portfolio__title::after,
+.blog__title::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -913,4 +921,147 @@ body {
 .certificates__data {
   font-size: 1.2rem;
   color: var(--color-subtitles);
+}
+
+/* portafolio */
+
+.portfolio__navbar {
+  margin-bottom: 3rem;
+}
+
+.portfolio__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.portfolio__option {
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+
+.portfolio__option--active {
+  opacity: 1;
+}
+
+.portfolio__link {
+  cursor: pointer;
+}
+
+.portfolio__link:hover {
+  color: var(--color-secondary);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio__gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  position: relative;
+  flex-basis: 33.33%;
+  padding: 0.7rem;
+}
+
+.gallery__container--image {
+  overflow: hidden;
+}
+
+.gallery__image {
+  transition: all 300ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__image {
+  transform: scale(1.1);
+}
+
+.gallery__title {
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+  font-weight: Bold;
+}
+
+.gallery__icon {
+  opacity: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 3rem;
+  background-color: var(--color-principal);
+  color: var(--color-secondary);
+  transition: all 450ms ease-in-out;
+}
+
+.gallery__category {
+  opacity: 0;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.1rem;
+
+  background-color: var(--color-principal);
+  color: var(--color-text);
+  transition: all 450ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__icon,
+.gallery__item:hover .gallery__category {
+  opacity: 1;
+}
+
+/* apartado Blog */
+
+.blog__articles {
+  margin-bottom: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.articles__article {
+  flex-basis: 50%;
+  padding: 0 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.article__top {
+  position: relative;
+  overflow: hidden;
+}
+
+.article__category {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.1rem 0.7rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+
+  background-color: var(--color-principal);
+  color: var(--color-text);
+  z-index: 3;
+}
+
+.article__mask {
+  width: 100%;
+  height: 18.5rem;
+  overflow: hidden;
+}
+
+.article__image {
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+.article__top:hover .article__image {
+  transform: scale(1.1);
 }
