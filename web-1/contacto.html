@@ -130,13 +130,78 @@
                 <h2 class="contact__subtitle">Developer</h2>
               </div>
             </section>
-            <section class="contact__form">
-              <div class="contact__map"></div>
+            <section class="contact__form-box">
+              <div class="contact__map">
+                <!-- <iframe
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9548.504759132835!2d-78.48689822428226!3d-0.1755415354223138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a853f53c479%3A0x876b841e50817a25!2sCentro%20Comercial%20Naciones%20Unidas%20(CCNU)!5e1!3m2!1ses!2sec!4v1782919134634!5m2!1ses!2sec"
+                  style="border: 0"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe> -->
+              </div>
+
               <header class="contact__form-header">
-                <her class="contact__subtitle">
-                  ¿Cómo puedo <span class="subtitle__color">ayudarte?</span>
-                </her>
+                <h3 class="form-header__title">
+                  ¿Cómo puedo <span class="title__color">ayudarte?</span>
+                </h3>
               </header>
+
+              <form class="contact__form">
+                <div class="form__container">
+                  <section class="form__left">
+                    <div class="form__group">
+                      <input
+                        type="text"
+                        class="form__input"
+                        required
+                        placeholder="Nombre"
+                        name="name"
+                      />
+                      <label for="name" class="form__label">Nombre</label>
+                    </div>
+                    <div class="form__group">
+                      <input
+                        type="email"
+                        class="form__input"
+                        required
+                        placeholder="Email"
+                        name="email"
+                      />
+                      <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group">
+                      <input
+                        type="text"
+                        class="form__input"
+                        required
+                        placeholder="Asunto"
+                        name="subject"
+                      />
+                      <label for="subject" class="form__label">Asunto</label>
+                    </div>
+                  </section>
+                  <section class="form__right">
+                    <div class="form__group">
+                      <textarea
+                        name="message"
+                        class="form__input form__input--textarea"
+                        required
+                        placeholder="Mensaje"
+                      ></textarea>
+                      <label for="message" class="form__label">Mensaje</label>
+                    </div>
+                  </section>
+                </div>
+                <input
+                  type="submit"
+                  value="Enviar Mensaje"
+                  class="form__button"
+                />
+              </form>
             </section>
           </div>
         </section>
